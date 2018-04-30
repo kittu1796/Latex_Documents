@@ -1,0 +1,9 @@
+\contentsline {section}{\numberline {1}Problem Statement}{1}
+\contentsline {subsection}{\numberline {1.1}Explain}{1}
+\contentsline {subsection}{\numberline {1.2}Design}{1}
+\contentsline {subsubsection}{\numberline {1.2.1}Transformer \& Regulator IC}{1}
+\contentsline {subsubsection}{\numberline {1.2.2}Specification Sheet}{1}
+\contentsline {section}{\numberline {2}Solution}{2}
+\contentsline {subsection}{\numberline {2.1}Explain}{2}
+\contentsline {subsection}{\numberline {2.2}Design}{2}
+\contentsline {section}{References}{3}

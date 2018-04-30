@@ -1,0 +1,108 @@
+\documentclass[11pt]{article}
+
+%-------------------------------------------
+%use package
+\usepackage[margin=1in]{geometry}
+\usepackage{amsfonts, amsmath, amssymb}
+\usepackage[none]{hyphenat}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+\usepackage[nottoc, notlot, notlof]{tocbibind}
+
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\fancyhead[L]{\uppercase{\textit{Title}}}
+\fancyhead[R]{\textit{Name of student}}
+\fancyfoot[C]{\thepage}
+
+\renewcommand{\footrulewidth}{2pt}
+\parindent 0ex
+%\setlength{\parindent}{4em}
+%\setlength{\parskip}{1em}
+\renewcommand{\baselinestretch}{1.5}
+%-------------------------------------------
+
+\begin{document}
+	
+	\begin{titlepage}
+		\begin{center}
+			\vspace*{1cm}
+			\Large{\textsc{Selec Controls}}\\
+			%\Large{\textbf{Transformer Power Supply}}
+			\vfill
+			\line(1,0){400}\\[1mm]
+			\Huge{\textsc{Transformer Design}}\\ [3mm]
+			\huge{\textbf{-HW Assignment 4-}}\\ [1mm]
+			\line(1,0){400}\\
+			\vfill 
+			By : Ashwini Kumar Gupta\\
+			Dept. Of Electronics \& Telecommunication\\
+			VES Institute of Technology, Chembur \\
+			\today\\
+			
+		\end{center}
+	\end{titlepage}
+	
+	\tableofcontents
+	\thispagestyle{empty}
+	\clearpage
+	
+	\setcounter{page}{1}
+	
+	\section{Problem Statement}
+		\subsection{Explain}
+			\begin{enumerate}
+				\item Primary Winding
+				\item Secondary Winding
+				\item Turn ratio of Transformer
+				\item Difference in CT \& PT
+				\item Type of Losses in transformer
+			\end{enumerate}
+	
+		\subsection{Design}
+			
+			\subsubsection{Transformer \& Regulator IC}
+				\begin{figure}[H]
+					%\includegraphics[scale=0.5]{Image_name.png}
+					\caption{This is example image}
+					\label{fig:image1}
+				\end{figure}
+				Select Transformer and regulator IC for circuit figure \ref{fig:image1} 					Linear Power supply.
+				\begin{enumerate}[align=left]
+					\item[Input:] 240 VAC , 50 Hz +/- 10 \%
+					\item[Output:] 5VDC , +/- 2% , 0.5A
+					\item [Isolation:]
+					
+						\begin{enumerate}[align =left]
+						
+							\item I/P to O/P : 1KV
+							\item Mains supply to Body /Chassis :2.5KV
+						\end{enumerate}
+				\end{enumerate}
+			\subsubsection{Specification Sheet}
+				For figure \ref{fig:image1} Prepare Technical Specification sheet for 						Transformer considering following parameters\footnote{An example 							footnote.}	
+				\begin{enumerate}
+					\item Voltage , Current \& VA rating of Primary \& Secondary 									Winding.
+					\item Efficiency
+					\item Isolation
+					\item Turns ratio
+					\item Transformer pin diagram				
+				\end{enumerate}
+				
+		\section{Solution}
+			\subsection{Explain}
+				The content goes here\cite{ref1}.
+			\subsection{Design}
+				The solution goes here.		
+		
+		\newpage
+		\begin{thebibliography}{}
+			\bibitem{ref1}
+			this is fun
+			\bibitem{ref2}
+			this is also fun
+		\end{thebibliography}
+\end{document}
