@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6630 64-bit) (preloaded format=xelatex 2018.4.30)  16 JUN 2018 13:08
+This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6630 64-bit) (preloaded format=xelatex 2018.4.30)  19 JUL 2018 18:42
 entering extended mode
 **./sw_documentation_template.tex
 (sw_documentation_template.tex
@@ -182,23 +182,25 @@ Package tocbibind Info: The document has section divisions on input line 50.
 
 Package tocbibind Note: Using section or other style headings.
 
-) (sw_documentation_template.aux)
+)
+\c@imageCounter=\count104
+ (sw_documentation_template.aux)
 \openout1 = `sw_documentation_template.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
 
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -235,23 +237,24 @@ LaTeX Font Info:    ... okay on input line 28.
 
 [1
 
-] (sw_documentation_template.toc
-LaTeX Font Info:    Try loading font information for U+msa on input line 4.
- ("D:\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 4.
-("D:\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-))
+] (sw_documentation_template.toc)
 \tf@toc=\write3
 \openout3 = `sw_documentation_template.toc'.
 
  [1]
-Overfull \hbox (35.65562pt too wide) in paragraph at lines 58--71
-[] 
+Underfull \hbox (badness 10000) in paragraph at lines 87--88
+
  []
 
+LaTeX Font Info:    Try loading font information for U+msa on input line 88.
+("D:\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 88.
+
+("D:\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -262,12 +265,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 ] [2] (sw_documentation_template.aux) ) 
 Here is how much of TeX's memory you used:
- 2597 strings out of 427836
- 32196 string characters out of 3155125
- 107812 words of memory out of 3000000
- 6534 multiletter control sequences out of 15000+200000
+ 2612 strings out of 427836
+ 32424 string characters out of 3155125
+ 109873 words of memory out of 3000000
+ 6549 multiletter control sequences out of 15000+200000
  8376 words of font info for 43 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
- 27i,10n,43p,250b,231s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 27i,11n,43p,250b,424s stack positions out of 5000i,500n,10000p,200000b,50000s
 
 Output written on sw_documentation_template.pdf (4 pages).

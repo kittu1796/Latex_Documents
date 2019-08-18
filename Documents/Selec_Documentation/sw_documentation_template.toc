@@ -1,4 +1,4 @@
-\contentsline {section}{\numberline {1}Problem statement}{1}
-\contentsline {section}{\numberline {2}Variable Specification}{1}
-\contentsline {section}{\numberline {3}Flowchart}{1}
-\contentsline {section}{References}{2}
+\contentsline {section}{\numberline {1}Objective}{1}
+\contentsline {section}{\numberline {2}Assignment Details}{1}
+\contentsline {section}{\numberline {3}Design Considerations}{1}
+\contentsline {section}{\numberline {4}Block Diagram}{2}

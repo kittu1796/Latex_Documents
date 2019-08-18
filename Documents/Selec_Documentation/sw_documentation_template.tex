@@ -14,7 +14,7 @@
 \pagestyle{fancy}
 \fancyhead{}
 \fancyfoot{}
-\fancyhead[L]{\uppercase{\textit{Window Comparator}}}
+\fancyhead[L]{\uppercase{\textit{Interfacing Microcontroller}}}
 \fancyhead[R]{\textit{Ashwini Kumar Gupta}}
 \fancyfoot[C]{\thepage}
 
@@ -36,8 +36,8 @@
 			%\Large{\textbf{Transformer Power Supply}}
 			\vfill
 			\line(1,0){400}\\[1mm]
-			\Huge{\textsc{title}}\\ [3mm]
-			\huge{\textbf{-SW Assignment -}}\\ [1mm]
+			\Huge{\textsc{Interfacing Microcontroller}}\\ [3mm]
+			\huge{\textbf{-HW Assignment 11-}}\\ [1mm]
 			\line(1,0){400}\\
 			\vfill 
 			\large{By : Ashwini Kumar Gupta\\
@@ -54,35 +54,93 @@
 	
 	\setcounter{page}{1}
 	
-	\section{Problem statement}
+	\section{Objective}
+		To develop knowledge of selecting \& Interfacing Microcontroller as per
+Application requirement.
 		
-	\section{Variable Specification}
+	\section{Assignment Details}
+	Select 'Renesas RL78 / G12 family ' Microcontroller suitable for following Application	
+		\begin{enumerate}
+			\item Interface 12VDC, 20mA Buzzer (use HA6 Circuit )
+			\item Interface HONGFA Relay , 1Form A , 12 VdC coil supply , 10A Contact rating (use HA9 circuit)
+			\item Sense Healthiness of Mains AC Power supply , Mains supply > 100VAC is healthy condition ( use HA8 circuit)
+			\item Measure Sensor response , which O/P is in the range of 5mV to 100mV, amplified suitably for Single ended ADC of selected Microcontroller (use HA7 circuit)
+			\item  Interface non isolated RS 485 port. (use TI make SN65HVD08)
+		\end{enumerate}
 		
-		 
-	\section{Flowchart}
-	
-		\subsection{keepAsking function}
-			\begin{figure}[H]
-				\includegraphics[scale=0.75]{name.png}
-				\caption{\textbf{keepAsking Function(for valid input)}}
+	\section{Design Considerations}
+		\begin{itemize}
+			\item[Microcontroller Selection:]
+				\begin{itemize}
+			\item The microcontroller should be able to handle analog voltage from the op-amp circuit, i.e. inbuilt ADC.
+			\item Should be able to understand TTl logic.
+			\item Low power consuming
+			\item should provide with at least 1 interrupt pin for RS485.
+			\item min of 2KB of ROM.
+			\item The Renesas RL78 / G12 family has a device R5F1026AASP  suitable for this application.
+				\end{itemize}
+		
+			\item[Crystal and capacitors:]
+				\begin{itemize}
+					\item The for operating at 12MHz
+					\item Crystal ECS-120-8-33B-CZM-TR
+					\item the crystal cpacitors required will be,\\
+						$$ C_{l1} = C_{l2} = 2*(C_l - C_p)$$
+						From data sheet we get $C_l$ = 8 pf, $C_p =  2pf$
+						$$ C_{l1} = C_{l2} = 12 pf$$
+				\end{itemize}
 				
-			\end{figure}
+			\item[Reset]
+				\begin{itemize}
+					\item Reset pin is active low.
+					\item the Reset pin will be connected to 3.3 V through a 1K$ \Omega$ resistor and to GND through a push button.
+					 
+				\end{itemize}
+			\item[Selection of Pins for I/P and O/P devices]
+				\begin{itemize}
+					\item[Buzzer]
+						\begin{itemize}
+							\item It is an Output device requiring 1 GPIO with low current requirement.
+							\item attach Buzzer circuit to PIN 17.
+							\item Pin 17 is a PCLBUZ0 i.e a programmable pin dedicated to buzzer.
+						\end{itemize}
+					\item[Relay]
+						\begin{itemize}
+							\item It is an Output device requiring 1 GPIO with low current requirement.
+							\item attach Buzzer circuit to PIN 19.
+						\end{itemize}
+						
+					\item[Opto Isolator circuit]
+						\begin{itemize}
+							\item It is an input circuit with TTL logic.
+							\item only requires Digital input pin.
+							\item assigning PIN 4/ PORT 40, since it is only input pin.
+						\end{itemize}
+					\item[Op-Amp Circuit]
+						\begin{itemize}
+							\item It is an input circuit with analog input.
+							\item Requires ADC pin.
+							\item Assigning pin 18 since it is an Analog Input pin (ANI3)
+						\end{itemize}
+					\item[RS485]
+						\begin{itemize}
+							\item Requires a Digital Tx and Rx pin
+							\item Pin 15 is TxD0 for D (of RS485)
+							\item Pin 16 is RxD0 for R (of RS485).
+							\item Since RS485 is half duplex, we can control the RE and DE Pin from same interrupt pin of microcontroller.
+							\item Interrupt Pin 6 i.e INTP0 for RE and DE 
+						\end{itemize}
+					
+					\item[Default]
+						\begin{itemize}
+							\item Vss to GND
+							\item Vdd to 3.3V
+							\item set TTL analog voltage ref at $AV_{refm}$ and      
+							$ AV_{refp}$
+						\end{itemize}
+				\end{itemize}
+		\end{itemize}
 		
-			
-	\section{Test Results}			
-			
-			\begin{figure}[H]
-				\centering 
-				\includegraphics[scale=1]{1_first.png}
-				\caption{Test case \theimageCounter}
-				\refstepcounter{imageCounter}
-			\end{figure}
-			\begin{table}[h!]
-				\centering
-				\caption{Test Data}
-				\vspace*{2mm}
-				\begin{tabular}{|c|c|c|c|c|c|c|}
-				
-				\end{tabular} 
-			\end{table}
+	\section{Block Diagram}
+		
 \end{document}
